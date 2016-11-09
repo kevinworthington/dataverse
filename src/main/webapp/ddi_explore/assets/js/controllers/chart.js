@@ -78,7 +78,7 @@ angular.module('odesiApp').controller('chartCtrl', function($scope, $cookies,sha
 					//need to blend the descriptions with the freqency data (stored in the _variableData)
 					var total=0;
 					if(_variableData){
-						parseFloat(_variableData.valid);
+						total= parseFloat(_variableData.valid);
 					}
 					if(typeof(data)=="undefined" ){//there is no 'catgry' values
 						if(typeof(_variableData)=="undefined" || typeof(_variableData.plotvalues)=="undefined"){
